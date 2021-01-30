@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXNodesList?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainRootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="942.0" prefWidth="1370.0" style="-fx-border-color: #34515e; -fx-border-width: 10; -fx-background-color: #607D8B;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kclc.MainWindowController">
+   <children>
+      <ImageView fx:id="mainWindow_adminProfile" fitHeight="80.0" fitWidth="80.0" layoutX="22.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/profile_generic_icon_96px.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="mainWindow_lblWelcome" alignment="BASELINE_LEFT" contentDisplay="TOP" layoutX="162.0" layoutY="26.0" prefHeight="50.0" prefWidth="375.0" text="Welcome Kristina" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="mainMenuLeftPane" layoutX="10.0" layoutY="87.0" prefHeight="845.0" prefWidth="223.0" style="-fx-background-color: #607D8B;">
+         <children>
+            <JFXButton fx:id="mainMenuLeftPane_btnDashBoard" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="11.0" layoutY="96.0" prefHeight="35.0" prefWidth="197.0" style="-fx-background-color: #607D8B; -fx-selection-bar: #bbdefb;" text="Dashboard" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="mainMenuLeftPane_btnStudents" alignment="BASELINE_LEFT" defaultButton="true" graphicTextGap="10.0" layoutX="11.0" layoutY="135.0" prefHeight="35.0" prefWidth="197.0" style="-fx-background-color: #607D8B#607D8B; -fx-selection-bar: #bbdefb;" text="Students" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="mainMenuLeftPane_btnTeachers" alignment="BASELINE_LEFT" defaultButton="true" graphicTextGap="10.0" layoutX="11.0" layoutY="174.0" prefHeight="35.0" prefWidth="197.0" style="-fx-background-color: #607D8B; -fx-selection-bar: #bbdefb;" text="Teachers" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="mainMenuLeftPane_btnCashbook" alignment="BASELINE_LEFT" defaultButton="true" graphicTextGap="10.0" layoutX="13.0" layoutY="213.0" prefHeight="35.0" prefWidth="197.0" style="-fx-background-color: #607D8B; -fx-selection-bar: #bbdefb;" text="Cashbook" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="mainMenuLeftPane_btnInventory" alignment="BASELINE_LEFT" defaultButton="true" graphicTextGap="10.0" layoutX="15.0" layoutY="252.0" prefHeight="35.0" prefWidth="197.0" style="-fx-background-color: #607D8B; -fx-selection-bar: #bbdefb;" text="Inventory" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="mainMenuLeftPane_btnSchedule" alignment="BASELINE_LEFT" defaultButton="true" graphicTextGap="10.0" layoutX="13.0" layoutY="291.0" prefHeight="35.0" prefWidth="197.0" style="-fx-background-color: #607D8B; -fx-selection-bar: #bbdefb;" text="Schedule" textFill="WHITE" visible="false">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXNodesList fx:id="mainMenuLeftPane_nodeListMenuAdd" layoutX="13.0" layoutY="320.0" prefHeight="35.0" prefWidth="197.0" />
+            <TextField fx:id="mainMenuLeftPane_txtSearch" layoutX="9.0" layoutY="22.0" prefHeight="25.0" prefWidth="144.0" />
+            <JFXButton fx:id="mainMenuLeftPane_btnSearch" contentDisplay="GRAPHIC_ONLY" layoutX="154.0" layoutY="21.0" prefHeight="25.0" prefWidth="30.0" text="search" textFill="WHITE" />
+            <JFXButton fx:id="mainMenuLeftPane_btnRefresh" contentDisplay="GRAPHIC_ONLY" layoutX="186.0" layoutY="20.0" prefHeight="25.0" prefWidth="30.0" text="refresh" textFill="WHITE" />
+            <JFXNodesList fx:id="mainMenuLeftPane_nodeListMenuAdd1" layoutX="23.0" layoutY="291.0" prefHeight="35.0" prefWidth="197.0" />
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="mainWindow_imgLogo" fitHeight="64.0" fitWidth="197.0" layoutX="1151.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/kclc_logo.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="435.0" layoutY="17.0" prefHeight="34.0" prefWidth="637.0" text="Kiddie Castle Learning Center" textFill="#81d4fa">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="487.0" layoutY="57.0" prefHeight="17.0" prefWidth="533.0" text="Paterio Franco Street, Cambaog, Bustos, Bulacan, Philippines" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <AnchorPane fx:id="dashboardAnchorPane" layoutX="240.0" layoutY="90.0" prefHeight="831.0" prefWidth="1103.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <JFXButton fx:id="dashboard_btnStudent" layoutX="164.0" layoutY="78.0" prefHeight="120.0" prefWidth="270.0" style="-fx-background-color: #80DEEA;" text="Students" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="dashboard_btnTeacher" layoutX="495.0" layoutY="78.0" prefHeight="120.0" prefWidth="270.0" style="-fx-background-color: #81D4FA;" text="Teachers" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="dashboard_btnCashbook" layoutX="164.0" layoutY="236.0" prefHeight="120.0" prefWidth="270.0" style="-fx-background-color: #FBC02D;" text="Cashbook" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="dashboard_btnInventory" layoutX="495.0" layoutY="236.0" prefHeight="120.0" prefWidth="270.0" style="-fx-background-color: #FF8A65;" text="Inventory" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="dashboard_btnReport" alignment="TOP_CENTER" contentDisplay="TOP" layoutX="907.0" layoutY="106.0" prefHeight="56.0" prefWidth="70.0" style="-fx-background-color: #607D8B;" text="Report" textFill="WHITE" wrapText="true" />
+            <JFXButton fx:id="dashboard_btnLogout" alignment="TOP_CENTER" contentDisplay="TOP" layoutX="907.0" layoutY="264.0" prefHeight="56.0" prefWidth="70.0" style="-fx-background-color: #607D8B;" text="Logout" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="29.0" layoutY="409.0" prefHeight="20.0" prefWidth="64.0" text="Hints:" textFill="#838383">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="dashboardHints" layoutY="431.0" prefHeight="405.0" prefWidth="1108.0" style="-fx-background-color: #F5F5F5;">
+               <children>
+                  <ImageView fitHeight="39.0" fitWidth="41.0" layoutX="79.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/info_48px.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="TOP_LEFT" layoutX="147.0" layoutY="107.0" prefHeight="50.0" prefWidth="345.0" text="Click either on the Left Panel or the Buttons above to go to each of the category." wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_LEFT" layoutX="147.0" layoutY="167.0" prefHeight="50.0" prefWidth="345.0" text="To add new item, you can either click the &quot;Add&quot; button in the left panel or inside each of the category." wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="50.0" fitWidth="45.0" layoutX="584.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/refresh_blue_50px.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="TOP_LEFT" layoutX="650.0" layoutY="117.0" prefHeight="30.0" prefWidth="345.0" text="Click &quot;Refresh&quot; to update information." wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="50.0" fitWidth="45.0" layoutX="584.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/search_blue_50px.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="TOP_LEFT" layoutX="650.0" layoutY="187.0" prefHeight="45.0" prefWidth="299.0" text="Search results depends on the active category." wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_LEFT" layoutX="147.0" layoutY="224.0" prefHeight="50.0" prefWidth="345.0" text="To backup data, you can press the &quot;Report&quot; button." wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="studentAnchorPane" layoutX="239.0" layoutY="89.0" prefHeight="836.0" prefWidth="1111.0" style="-fx-background-color: #ffffff;" visible="false">
+         <children>
+            <JFXListView fx:id="student_listStudent" layoutX="8.0" layoutY="11.0" prefHeight="803.0" prefWidth="1095.0" visible="false" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="teacherAnchorPane" layoutX="238.0" layoutY="90.0" prefHeight="836.0" prefWidth="1111.0" style="-fx-background-color: #ffffff;" visible="false">
+         <children>
+            <JFXListView fx:id="teacher_listTeacher" layoutX="8.0" layoutY="11.0" prefHeight="803.0" prefWidth="1095.0" visible="false" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="cashbookAnchorPane" layoutX="253.0" layoutY="93.0" prefHeight="818.0" prefWidth="1095.0" style="-fx-background-color: #ffffff;" visible="false">
+         <children>
+            <TableView fx:id="cashbook_tableView" editable="true" layoutY="66.0" prefHeight="753.0" prefWidth="1095.0">
+              <columns>
+                  <TableColumn prefWidth="50.0" text="ID" />
+                <TableColumn prefWidth="151.0" text="Date" />
+                  <TableColumn prefWidth="393.0" text="Description" />
+                  <TableColumn prefWidth="147.0" text="Income" />
+                  <TableColumn prefWidth="140.0" text="Expenses" />
+                  <TableColumn prefWidth="213.0" text="Bank Balance" />
+              </columns>
+            </TableView>
+            <Label layoutX="347.0" layoutY="779.0" prefHeight="35.0" prefWidth="144.0" text="Previous Month:" textFill="#00aaee" visible="false">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="740.0" layoutY="779.0" prefHeight="35.0" prefWidth="144.0" text="Now:" textFill="#00aaee" visible="false">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="779.0" prefHeight="35.0" prefWidth="144.0" text="Bank Balance" textFill="#ff6600" visible="false">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblPrevMonth_BankBalance" layoutX="499.0" layoutY="779.0" prefHeight="35.0" prefWidth="144.0" textFill="#00aaee" visible="false">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblThisMonth_BankBalance" layoutX="794.0" layoutY="779.0" prefHeight="35.0" prefWidth="144.0" textFill="#00aaee" visible="false">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="cashbookLabel_Desc" layoutX="58.0" layoutY="30.0" prefHeight="17.0" prefWidth="45.0" text="Desc:" textFill="#ffab00">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="cashbook_txtDescription" layoutX="109.0" layoutY="25.0" prefHeight="25.0" prefWidth="465.0">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <TextField fx:id="cashbook_txtAmount" layoutX="683.0" layoutY="25.0" prefHeight="25.0" prefWidth="112.0">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <Label fx:id="casgbookLabel_Amount" layoutX="615.0" layoutY="30.0" prefHeight="20.0" prefWidth="70.0" text="Amount:" textFill="#ffab00">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <JFXRadioButton fx:id="cashbook_radioIncome" layoutX="820.0" layoutY="7.0" text="Income" textFill="#0099ff">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="cashbook_radioExpense" layoutX="820.0" layoutY="39.0" text="Expense" textFill="#ff4949">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXRadioButton>
+            <JFXButton fx:id="cashbook_btnAdd" layoutX="944.0" layoutY="20.0" prefHeight="25.0" prefWidth="82.0" style="-fx-background-color: #80DEEA;" text="Add" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></JFXButton>
+            <Label fx:id="cashbook_lblPleaseComplete" alignment="CENTER" contentDisplay="CENTER" layoutX="111.0" layoutY="4.0" prefHeight="17.0" prefWidth="465.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="inventoryAnchorPane" layoutX="253.0" layoutY="93.0" prefHeight="818.0" prefWidth="1095.0" style="-fx-background-color: #ffffff;" visible="false" AnchorPane.bottomAnchor="21.0" AnchorPane.leftAnchor="243.0" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="93.0">
+         <children>
+            <TableView fx:id="inventory_tableView" editable="true" layoutY="65.0" prefHeight="744.0" prefWidth="1085.0">
+               <columns>
+                  <TableColumn prefWidth="209.0" text="Quantity" />
+                  <TableColumn prefWidth="380.0" text="Item" />
+                  <TableColumn minWidth="4.0" prefWidth="494.0" text="Purchased Date" />
+               </columns>
+            </TableView>
+            <Label fx:id="inventory_lblQty" layoutX="23.0" layoutY="30.0" prefHeight="17.0" prefWidth="45.0" text="Qty:" textFill="#ffab00">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="inventory_lblItem" layoutX="143.0" layoutY="30.0" prefHeight="17.0" prefWidth="45.0" text="Item:" textFill="#ffab00">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="inventory_lblDate" layoutX="674.0" layoutY="27.0" prefHeight="17.0" prefWidth="45.0" text="Date:" textFill="#ffab00">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="inventory_datePicker" layoutX="719.0" layoutY="25.0" prefHeight="25.0" prefWidth="157.0" />
+            <JFXButton fx:id="inventory_btnAdd" layoutX="889.0" layoutY="25.0" prefHeight="25.0" prefWidth="77.0" style="-fx-background-color: #80DEEA;" text="Add" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="inventory_btnDelete" layoutX="978.0" layoutY="25.0" prefHeight="25.0" prefWidth="77.0" style="-fx-background-color: #80DEEA;" text="Delete" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></JFXButton>
+            <TextField fx:id="inventory_txtQty" layoutX="70.0" layoutY="25.0" prefHeight="25.0" prefWidth="56.0">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <TextField fx:id="inventory_txtItem" layoutX="199.0" layoutY="25.0" prefHeight="25.0" prefWidth="465.0">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <Label fx:id="inventory_lblPleaseComplete" alignment="CENTER" contentDisplay="CENTER" layoutX="199.0" layoutY="6.0" prefHeight="17.0" prefWidth="465.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

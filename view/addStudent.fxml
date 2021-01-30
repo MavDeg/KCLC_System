@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootAnchorPane" prefHeight="603.0" prefWidth="890.0" style="-fx-border-color: #34515e; -fx-border-width: 10; -fx-background-color: #607D8B;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kclc.AddStudentController">
+   <children>
+      <ImageView fx:id="logo" fitHeight="66.0" fitWidth="200.0" layoutX="662.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/kclc_logo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblAddNewStudent" layoutX="26.0" layoutY="17.0" prefHeight="55.0" prefWidth="210.0" text="Add New Student" textFill="#80deea">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="19.0" layoutY="105.0" pickOnBounds="false" prefHeight="478.0" prefWidth="851.0" style="-fx-border-color: #80DEEA; -fx-background-color: #ffffff; -fx-border-width: 2;">
+         <children>
+            <TextField fx:id="txtFirstName" layoutX="225.0" layoutY="40.0" prefHeight="37.0" prefWidth="299.0" promptText="* First Name">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtMiddleName" layoutX="225.0" layoutY="83.0" prefHeight="37.0" prefWidth="299.0" promptText="Middle Name">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtLastName" layoutX="224.0" layoutY="127.0" prefHeight="37.0" prefWidth="299.0" promptText="* Last Name">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtGuardian" layoutX="17.0" layoutY="221.0" prefHeight="37.0" prefWidth="507.0" promptText="* Guardian">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtPhone" layoutX="17.0" layoutY="265.0" prefHeight="37.0" prefWidth="507.0" promptText="* Phone">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextArea fx:id="txtAddress" layoutX="17.0" layoutY="311.0" prefHeight="48.0" prefWidth="507.0" promptText="* Address">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextArea>
+            <Label layoutX="568.0" layoutY="43.0" prefHeight="25.0" prefWidth="72.0" text="Date from:" textFill="#ff8a65">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="568.0" layoutY="84.0" prefHeight="25.0" prefWidth="72.0" text="To:" textFill="#ff8a65">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="570.0" layoutY="129.0" prefHeight="25.0" prefWidth="92.0" text="Time from: " textFill="#ff8a65">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="cmbTeacher" layoutX="650.0" layoutY="220.0" prefHeight="25.0" prefWidth="180.0" promptText="*" />
+            <Label layoutX="568.0" layoutY="220.0" prefHeight="25.0" prefWidth="72.0" text="Teacher:" textFill="#ff8a65">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="txtRemark" layoutX="17.0" layoutY="374.0" prefHeight="93.0" prefWidth="507.0" promptText="Remark">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextArea>
+            <JFXComboBox fx:id="cmbPaymentStatus" layoutX="702.0" layoutY="295.0" prefHeight="25.0" prefWidth="127.0" promptText="*" />
+            <TextField fx:id="txtPayment" layoutX="689.0" layoutY="344.0" prefHeight="30.0" prefWidth="144.0" promptText="* Payment">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="567.0" layoutY="295.0" prefHeight="25.0" prefWidth="115.0" text="Payment Status:" textFill="#ff8a65">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="567.0" layoutY="347.0" prefHeight="25.0" prefWidth="115.0" text="Payment (₱):" textFill="#ff8a65">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="addNewStudent_btn_Cancel" layoutX="593.0" layoutY="418.0" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: #00b8d4;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="addNewStudent_btn_Add" layoutX="715.0" layoutY="418.0" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: #00b8d4;" text="Add" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <DatePicker fx:id="startDate" layoutX="665.0" layoutY="41.0" prefHeight="30.0" prefWidth="164.0" promptText="* Start date" />
+            <DatePicker fx:id="endDate" layoutX="666.0" layoutY="81.0" prefHeight="30.0" prefWidth="164.0" promptText="* End date" />
+            <JFXComboBox fx:id="cmbTimeStart" layoutX="666.0" layoutY="132.0" prefHeight="25.0" prefWidth="164.0" promptText="*" style="-fx-background-color: #ffff;" />
+            <JFXComboBox fx:id="cmbTimeEnd" layoutX="665.0" layoutY="168.0" prefHeight="25.0" prefWidth="164.0" promptText="*" style="-fx-background-color: #ffff;" />
+            <Label layoutX="568.0" layoutY="167.0" prefHeight="25.0" prefWidth="72.0" text="To:" textFill="#ff8a65">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="cmbAge" layoutX="273.0" layoutY="185.0" prefHeight="25.0" prefWidth="66.0" />
+            <JFXComboBox fx:id="cmbGradeLevel" layoutX="455.0" layoutY="185.0" prefHeight="25.0" prefWidth="66.0" />
+            <Label layoutX="226.0" layoutY="186.0" prefHeight="25.0" prefWidth="48.0" text="Age:" textFill="#ff8a65">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="356.0" layoutY="186.0" prefHeight="25.0" prefWidth="98.0" text="Grade Level:" textFill="#ff8a65">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblPleaseCompleteForm" alignment="CENTER" contentDisplay="CENTER" layoutX="224.0" layoutY="6.0" prefHeight="25.0" prefWidth="617.0" textFill="#ff0c0c">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imgProfilePic" fitHeight="150.0" fitWidth="150.0" layoutX="31.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/profile_generic_icon_96px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginAnchorPane2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="324.0" prefWidth="439.0" style="-fx-background-color: #34515e; -fx-border-color: #37474f; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kclc.LoginController">
+   <children>
+      <ImageView fx:id="loginImageLogo" fitHeight="57.0" fitWidth="190.0" layoutX="134.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/kclc_logo.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="loginButton" contentDisplay="RIGHT" layoutX="25.0" layoutY="235.0" prefHeight="48.0" prefWidth="391.0" style="-fx-background-color: #00b8d4;" text="Log in" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="loginTextFieldUsername" layoutX="81.0" layoutY="112.0" prefHeight="41.0" prefWidth="335.0">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <PasswordField fx:id="loginPasswordField" layoutX="81.0" layoutY="170.0" prefHeight="41.0" prefWidth="335.0">
+         <font>
+            <Font size="16.0" />
+         </font></PasswordField>
+      <ImageView fx:id="loginUsernameIcon" fitHeight="35.0" fitWidth="35.0" layoutX="25.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/icons8-female-profile-40.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="loginPasswordIcon" fitHeight="35.0" fitWidth="35.0" layoutX="25.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/icons8-forgot-password-40.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="loginLabel_FailedMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="19.0" layoutY="290.0" prefHeight="20.0" prefWidth="402.0" textAlignment="CENTER" textFill="#ff6e6e">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

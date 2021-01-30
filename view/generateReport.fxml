@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="299.0" prefWidth="384.0" style="-fx-border-color: #34515e; -fx-border-width: 10; -fx-background-color: #607D8B;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kclc.GenerateReport">
+   <children>
+      <ImageView fx:id="logo" fitHeight="55.0" fitWidth="151.0" layoutX="222.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/kclc_logo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblAddNewStudent" layoutX="26.0" layoutY="17.0" prefHeight="55.0" prefWidth="200.0" text="Generate Report" textFill="#80deea">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="24.0" layoutY="104.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="180.0" prefWidth="335.0" style="-fx-border-color: #80DEEA; -fx-background-color: #ffffff; -fx-border-width: 2;">
+         <children>
+            <JFXRadioButton fx:id="radio_students" layoutX="20.0" layoutY="14.0" prefHeight="25.0" prefWidth="115.0" text="Students" textFill="#00acbf">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="radio_teachers" layoutX="20.0" layoutY="46.0" prefHeight="25.0" prefWidth="115.0" text="Teachers" textFill="#00acbf">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="radio_cashbook" layoutX="21.0" layoutY="79.0" prefHeight="25.0" prefWidth="115.0" text="Cashbook" textFill="#00acbf">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="radio_inventory" layoutX="21.0" layoutY="110.0" prefHeight="25.0" prefWidth="115.0" text="Inventory" textFill="#00acbf">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXRadioButton>
+            <JFXButton fx:id="btnExport" layoutX="201.0" layoutY="14.0" prefHeight="70.0" prefWidth="121.0" style="-fx-background-color: #00b8d4;" text="Export" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXRadioButton fx:id="radio_all" layoutX="21.0" layoutY="142.0" prefHeight="25.0" prefWidth="115.0" text="All" textFill="#00acbf">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXRadioButton>
+            <JFXButton fx:id="btnCancel" layoutX="247.0" layoutY="132.0" prefHeight="40.0" prefWidth="75.0" style="-fx-background-color: #00b8d4;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Label layoutX="25.0" layoutY="78.0" prefHeight="17.0" prefWidth="285.0" text="Please choose the file to be exported:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

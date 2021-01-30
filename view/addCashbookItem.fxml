@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootAnchorPane" prefHeight="277.0" prefWidth="636.0" style="-fx-border-color: #34515e; -fx-border-width: 10; -fx-background-color: #607D8B;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kclc.AddCashbookItemController">
+   <children>
+      <ImageView fx:id="logo" fitHeight="66.0" fitWidth="200.0" layoutX="428.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/kclc_logo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblAddNewStudent" layoutX="26.0" layoutY="17.0" prefHeight="55.0" prefWidth="327.0" text="Add New Cashbook Item" textFill="#80deea">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="29.0" layoutY="104.0" pickOnBounds="false" prefHeight="151.0" prefWidth="590.0" style="-fx-border-color: #80DEEA; -fx-background-color: #ffffff; -fx-border-width: 2;">
+         <children>
+            <TextArea fx:id="txtDescription" layoutX="18.0" layoutY="29.0" prefHeight="74.0" prefWidth="429.0" promptText="Description" wrapText="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextArea>
+            <JFXButton fx:id="addNewCashBookItem_btn_Cancel" layoutX="483.0" layoutY="35.0" prefHeight="48.0" prefWidth="92.0" style="-fx-background-color: #00b8d4;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="addNewCashBookItem_btn_Add" layoutX="483.0" layoutY="90.0" prefHeight="48.0" prefWidth="92.0" style="-fx-background-color: #00b8d4;" text="Add" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="lblPleaseCompleteForm" alignment="CENTER" contentDisplay="CENTER" layoutX="18.0" layoutY="2.0" prefHeight="25.0" prefWidth="563.0" textFill="#ff0c0c">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtAmount" layoutX="84.0" layoutY="113.0" />
+            <Label layoutX="20.0" layoutY="115.0" prefHeight="20.0" prefWidth="74.0" text="Amount:" textFill="#868686">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXRadioButton fx:id="radioButton_Income" layoutX="252.0" layoutY="113.0" text="Income" textFill="#00acbf">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="radioButton_Expense" layoutX="355.0" layoutY="113.0" text="Expense" textFill="#ff4848">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXRadioButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
